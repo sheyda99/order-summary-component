@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+.text-muted {
+    color: #7280a7;
+}
+
+body {
+    background-color: #e0e8ff;
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 70px 20px;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    text-align: center;
+}
+.card .card-img-top img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card .card-body {
+    padding: 30px 20px;
+}
+.card .card-body h2 {
+    margin-bottom: 15px;
+    color: #1f2f56;
+    font-size: 22px;
+    font-weight: 700;
+}
+.card .card-body > p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.annual-plan {
+    padding: 15px;
+    margin: 15px 0 20px;
+    background-color: #f5f7ff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.annual-plan > div {
+    padding-left: 15px;
+    color: #1f2f56;
+    text-align: left;
+    flex-grow: 8;
+}
+.annual-plan h5 {
+    margin-bottom: 3px;
+    font-size: 16px;
+}
+.annual-plan a {
+    color: #3829e0;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.annual-plan a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.blue-btn {
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #3829e0;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 15px;
+}
+.blue-btn:hover {
+    opacity: 0.7;
+}
+.blue-btn + a {
+    display: block;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.blue-btn + a.text-muted:hover {
+    color: #222;
+}
+
+@media (max-width: 375px) {
+    body {
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
