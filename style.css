@@ -12,6 +12,7 @@ a {
 }
 
 body {
+    height: 100vh;
     background-color: #e0e8ff;
     background-image: url("../images/pattern-background-desktop.svg");
     background-repeat: no-repeat;
@@ -27,7 +28,6 @@ main {
 }
 
 .card {
-    margin: 70px 20px;
     max-width: 350px;
     background-color: #fff;
     border-radius: 20px;
@@ -40,16 +40,14 @@ main {
     border-top-right-radius: 20px;
 }
 .card .card-body {
-    padding: 30px 20px;
+    padding: 30px 40px;
 }
 .card .card-body h2 {
     margin-bottom: 15px;
     color: #1f2f56;
-    font-size: 22px;
     font-weight: 700;
 }
 .card .card-body > p {
-    font-size: 14px;
     font-weight: 500;
     line-height: 22px;
 }
@@ -109,10 +107,15 @@ main {
 
 @media (max-width: 375px) {
     body {
+        height: auto;
         background-image: url("../images/pattern-background-mobile.svg");
     }
 
     .card {
+        margin: 70px 20px;
         max-width: 100%;
+    }
+    .card .card-body {
+        padding: 30px 20px;
     }
 }
