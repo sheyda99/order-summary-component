@@ -42,7 +42,7 @@ main {
 .card .card-body {
     padding: 30px 40px;
 }
-.card .card-body h2 {
+.card .card-body h1 {
     margin-bottom: 15px;
     color: #1f2f56;
     font-weight: 700;
@@ -67,7 +67,7 @@ main {
     text-align: left;
     flex-grow: 8;
 }
-.annual-plan h5 {
+.annual-plan h2 {
     margin-bottom: 3px;
     font-size: 16px;
 }
